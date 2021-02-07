@@ -9,26 +9,29 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container header-wrapper">
             <div class="header-wrapper__logo">
-                <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
-                <!--<input type="search" class="search">-->
+                <a href="./index.html"></a><img class="header__logo" src="./img/logo.svg" alt="logo" width="44"
+                    height="38">
+                <label class="search-label visualy-hidden" for="search">Поиск</label>
+                <input type="search" class="search" placeholder="Поиск" id="search">
                 <img src="./img/loupe.svg" alt="лупа" width="27" height="28">
             </div>
             <ul class="header-list">
-                <li><button class="header-list__button">
+                <li><button type="button" class="header-list__button">
                         <img src="./img/burger.svg" alt="burger" width="32" height="32">
                     </button>
                 </li>
-                <li><button class="header-list__button">
+                <li><button type="button" class="header-list__button">
                         <a href="registration.html"><img src="./img/login.svg" alt="burger" width="32" height="32"></a>
                     </button>
                 </li>
-                <li><button class=" header-list__button">
+                <li><button type="button" class=" header-list__button">
                         <img src="./img/cart.svg" alt="burger" width="32" height="32">
                     </button>
                 </li>
@@ -95,70 +98,77 @@
             </p>
             <ul class="featured__list">
                 <li class="featured__item">
-                    <img src="./img/first.jpg" alt="Борода" width="360" height="420" class="fetured__img">
-                    <div class="overlay"></div>
+                    <div class="featured__card-overlay">
+                        <img src="./img/first.jpg" alt="Борода" width="360" height="420">
+                        <button type="button" class="featured__button">Add to
+                            Cart</button>
+                    </div>
                     <h3 class="featured__header">ellery x m'o capsule</h3>
                     <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                         arbiter
                         of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p class="featured__price">$52.00</p>
-                    <button class="featured__button">Add to Cart</button>
                 </li>
                 <li class="featured__item">
-                    <img src="./img/sec.jpg" alt="Шпильки" width="360" height="420" class="fetured__img">
-                    <div class="overlay"></div>
+                    <div class="featured__card-overlay">
+                        <img src="./img/sec.jpg" alt="Шпильки" width="360" height="420" class="fetured__img">
+                        <button type="button" class="featured__button">Add to Cart</button>
+                    </div>
                     <h3 class="featured__header">ellery x m'o capsule</h3>
                     <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                         arbiter
                         of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p class="featured__price">$52.00</p>
-                    <button class="featured__button">Add to Cart</button>
                 </li>
                 <li class="featured__item">
-                    <img src="./img/third.jpg" alt="Панамка" width="360" height="420" class="fetured__img">
-                    <div class="overlay"></div>
+                    <div class="featured__card-overlay">
+                        <img src="./img/third.jpg" alt="Панамка" width="360" height="420" class="fetured__img">
+                        <button type="button" class="featured__button">Add to Cart</button>
+                    </div>
                     <h3 class="featured__header">ellery x m'o capsule</h3>
                     <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                         arbiter
                         of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p class="featured__price">$52.00</p>
-                    <button class="featured__button">Add to Cart</button>
                 </li>
                 <li class="featured__item">
-                    <img src="./img/fourth.jpg" alt="Йог" width="360" height="420" class="fetured__img">
-                    <div class="overlay"></div>
+                    <div class="featured__card-overlay">
+                        <img src="./img/fourth.jpg" alt="Йог" width="360" height="420">
+                        <button type="button" class="featured__button">Add to Cart</button>
+                    </div>
                     <h3 class="featured__header">ellery x m'o capsule</h3>
                     <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                         arbiter
                         of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p class="featured__price">$52.00</p>
-                    <button class="featured__button">Add to Cart</button>
                 </li>
                 <li class="featured__item">
-                    <img src="./img/fifth.jpg" alt="Синий пиджак" width="360" height="420" class="fetured__img">
-                    <div class="overlay"></div>
+                    <div class="featured__card-overlay">
+                        <button type="button" class="featured__button">Add to Cart</button>
+                        <img src="./img/fifth.jpg" alt="Синий пиджак" width="360" height="420">
+                    </div>
                     <h3 class="featured__header">ellery x m'o capsule</h3>
                     <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                         arbiter
                         of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p class="featured__price">$52.00</p>
-                    <button class="featured__button">Add to Cart</button>
                 </li>
                 <li class="featured__item">
-                    <img src="./img/sixth.jpg" alt="Бежевый пиджак" width="360" height="420" class="fetured__img">
-                    <div class="overlay"></div>
+                    <div class="featured__card-overlay">
+                        <button type="button" class="featured__button">Add to Cart</button>
+                        <img src="./img/sixth.jpg" alt="Бежевый пиджак" width="360" height="420" class="fetured__img">
+                    </div>
                     <h3 class="featured__header">ellery x m'o capsule</h3>
                     <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                         arbiter
                         of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p class="featured__price">$52.00</p>
-                    <button class="featured__button">Add to Cart</button>
                 </li>
             </ul>
             <a href="#" class="featured__btn">Browse All Product</a>
@@ -166,28 +176,22 @@
         <section class="advantages">
             <ul class="advantages__list container">
                 <li class="advantages__item">
-                    <a href="#"></a>
                     <img class="advatages__img" src="./img/delivery.svg" alt="Доставка">
                     <h3 class="advantages__heading">Free Delivery</h3>
                     <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation
-                        innov
-                        tion with extensive models.</p>
+                        innovtion with extensive models.</p>
                 </li>
                 <li class="advantages__item">
-                    <a href="#"></a>
                     <img class="advatages__img" src="./img/sale.svg" alt="Распродажа">
                     <h3 class="advantages__heading">Sales & discounts</h3>
                     <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation
-                        innov
-                        tion with extensive models.</p>
+                        innovtion with extensive models.</p>
                 </li>
                 <li class="advantages__item">
-                    <a href="#"></a>
                     <img class="advatages__img" src="./img/quality.svg" alt="Качество услуг">
                     <h3 class="advantages__heading">Quality assurance</h3>
                     <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation
-                        innov
-                        tion with extensive models.</p>
+                        innovtion with extensive models.</p>
                 </li>
             </ul>
         </section>
@@ -204,14 +208,16 @@
 
             <div class="footer__form">
                 <div class="footer__appeal">
-                    <h1 class="footer__subtext">subscribe<span class="footer__subtext--two">for our newletter and
+                    <h3 class="footer__subtext">subscribe<span class="footer__subtext--two">for our newletter and
                             promotion</span>
-                    </h1>
+                    </h3>
                 </div>
-                <form action="" method="GET"></form>
-                <div class="footer__input">
-                    <input type="email" placeholder="Ваша лучшая почта">форма</input>
-                </div>
+                <form action="" method="GET">
+                    <div class="footer__input">
+                        <label class="visualy-hidden" for="email"></label>
+                        <input type="email" placeholder="Ваша лучшая почта"></input>
+                    </div>
+                </form>
             </div>
         </div>
         </form>

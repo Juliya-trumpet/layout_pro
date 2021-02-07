@@ -14,8 +14,9 @@
 <header class="header">
     <div class="container header-wrapper">
         <div class="header-wrapper__logo">
-            <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
-            <!--<input type="search" class="search">-->
+            <a href="./index.html"><img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38"></a>
+            <label class="search-label visualy-hidden" for="search"></label>
+            <input type="search" class="search" placeholder="Поиск" id="search">
             <img src="./img/loupe.svg" alt="лупа" width="27" height="28">
         </div>
         <ul class="header-list">
@@ -42,29 +43,30 @@
         <div class="reg-form container">
             <div class="reg-form__form">
                 <form action="#" method="POST">
-                    <h4 class="reg__title">Send Us Message</h4>
-                    <span class="full-name">Full Name</span><br>
-                    <input class="reg-form__input" type="text" placeholder=" Имя Фамилия"><br>
-                    <span class="full-name">Email</span><br>
-                    <input class="reg-form__input" type="email" placeholder=" Ваша Лучшая Почта"><br>
-                    <span class="full-name">Message</span><br>
-                    <textarea class="reg-form__input__texttera" name="comments" cols="53" rows="10"
-                        placeholder="--Ваше сообщение--"></textarea><br>
-                    <button type="submit" href="#" class="form__button">Send</button>
+                    <fieldset>
+                        <h4 class="reg__title">Send Us Message</h4>
+                        <p><label for="textField">Full Name</label></p>
+                        <input id="textField" type="text" placeholder=" Имя Фамилия"><br>
+
+                        <input class="reg-form__input" type="email" placeholder=" Ваша Лучшая Почта"><br>
+                        <span class="full-name">Message</span><br>
+                        <textarea class="reg-form__input__texttera" name="comments" cols="53" rows="10"
+                            placeholder="--Ваше сообщение--"></textarea><br>
+                        <button type="submit" href="#" class="form__button">Send</button>
+                    </fieldset>
                 </form>
             </div>
             <div class="reg-form__advantages">
-                <h1>LOYALTY HAS ITS PERKS</h1>
-                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these
+                <h1 class="reg-form__heading">Loyalty has its perks</h1>
+                <p class="reg-form__text">Get in on the loyalty program where you can earn points and unlock serious
+                    perks. Starting with these
                     as soon as you join:</p>
                 <ul class="list">
                     <li class="list__item">15% off welcome offer
                     </li>
                     <li class="list__item">Free shipping, returns and exchanges on all orders
-
                     </li>
                     <li class="list__item">$10 off a purchase on your birthday
-
                     </li>
                     <li class="list__item">Early access to products</li>
                     <li class="list__item">Exclusive offers & rewards</li>
@@ -89,9 +91,9 @@
 
         <div class="footer__form">
             <div class="footer__appeal">
-                <h1 class="footer__subtext">subscribe<span class="footer__subtext--two">for our newletter and
+                <h3 class="footer__subtext">subscribe<span class="footer__subtext--two">for our newletter and
                         promotion</span>
-                </h1>
+                </h3>
             </div>
             <form action="" method="POST"></form>
             <div class="footer__input">
