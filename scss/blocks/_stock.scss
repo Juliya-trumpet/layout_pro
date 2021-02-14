@@ -5,36 +5,36 @@
     padding: 64px 0 0;
     margin-bottom: 0 0 98px;
    
-    @include tablet {
-        padding: 19px 0 155px;
-    }
+    // @include tablet {
+    //     padding: 19px 0 155px;
+    // }
     .stock__item {
         width: 32%;
         min-height: 360px;  
         text-align: center;
 
-        @include tablet {
-            min-height: 168px;
-        }
+        // @include tablet {
+        //     min-height: 168px;
+        // }
 
-        @include mobile {
-            width: 100%;
-        }
+        // @include mobile {
+        //     width: 100%;
+        // }
         &--woman {
-            background-image: url(img/stock-img-1.jpg);
+            background-image: url(../img/stock-img-1.jpg);
             background-repeat: no-repeat;
         }
         &--man {
-            background-image: url(img/stock-img-2.jpg);
+            background-image: url(../img/stock-img-2.jpg);
             background-repeat: no-repeat;
         }    
         &--kid {
-            background-image: url(img/stock-img-3.jpg);
+            background-image: url(../img/stock-img-3.jpg);
             background-repeat: no-repeat;
         }
 
         &--shoes {
-            background-image: url(img/stock-img-4.jpg);
+            background-image: url(../img/stock-img-4.jpg);
             background-repeat: no-repeat;
             margin-top: 30px;
             width: 100%;
