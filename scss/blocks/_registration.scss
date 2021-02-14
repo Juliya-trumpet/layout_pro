@@ -1,0 +1,58 @@
+.reg-bar {
+    display: block;
+    min-height: 148px;
+    color: $pink-dark-color;
+}
+.reg-bar__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    color: $pink-dark-color;
+    text-transform: uppercase;
+    padding: 59px 0 60px 0;
+}
+.reg-form {
+    display: flex;
+    justify-content: space-between;
+    min-height: 675px;
+    background-color: #fff;
+}
+.reg-form__form {
+    padding-right: 125px;
+}
+.reg-form__advantages {
+    position: relative;
+}
+.reg-form__heading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+    color: $black-color;
+}
+.reg-form__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    padding-bottom: 21px;
+    color: $black-color;
+}
+.list__item {
+    position: relative; 
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    padding-bottom: 16px;
+    color: $black-color;
+}
+.list__item::before {
+    top: 5px;
+    left: -42px;
+    content: url('./img/done.svg');
+    position: absolute;
+}

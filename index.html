@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -23,16 +23,25 @@
                 <img src="./img/loupe.svg" alt="лупа" width="27" height="28">
             </div>
             <ul class="header-list">
-                <li><button type="button" class="header-list__button">
-                        <img src="./img/burger.svg" alt="burger" width="32" height="32">
+                <li><button type="button" class="header-list__button mobile-hide">
+                        <svg class="header__icon" width="32" height="23" viewBox="0 0 32 23"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
+                        </svg>
                     </button>
                 </li>
-                <li><button type="button" class="header-list__button">
-                        <a href="registration.html"><img src="./img/login.svg" alt="burger" width="32" height="32"></a>
+                <li><button type="button" class="header-list__button mobile-hide">
+                        <a href="registration.html"><svg class="header__icon" width="32" height="23" viewBox="0 0 32 23"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
+                            </svg>
                     </button>
                 </li>
-                <li><button type="button" class=" header-list__button">
-                        <img src="./img/cart.svg" alt="burger" width="32" height="32">
+                <li><button type="button" class=" header-list__button mobile-hide">
+                        <svg class="header__icon" width="32" height="23" viewBox="0 0 32 23"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
+                        </svg>
                     </button>
                 </li>
             </ul>
@@ -64,7 +73,7 @@
     </header>
     <main class="main">
         <section class="intro">
-            <img src="./img/man-in-jacket.jpg" alt="мужчина в пальто" width="800" height="765">
+            <img class="intro__img" src="./img/man-in-jacket.jpg" alt="мужчина в пальто" width="800" height="765">
             <div class="intro__heading-wrapper">
                 <h1 class="intro__heading">the brand<span class="intro__text">of luxerious <span
                             class="intro__pink">fashion</span></span></h1>
