@@ -5,6 +5,10 @@ body {
     font-weight: 300;
     line-height: 17px;
 }
+.wrapper{
+    max-width: 1600px;
+    max-width: 0 auto;
+}
 
 .visually-hidden {
     position: absolute;
@@ -18,7 +22,7 @@ body {
 }
 
 .container {
-    width: 71.3%;
+    width: 83.6%;
     margin: 0 auto;
 }
 .search {
@@ -33,10 +37,32 @@ body {
     background: red;
     display: none;
 }
-
-
+[type="text"], [type="email"], [type="login"] {
+    width: 322px;
+    height: 49px;
+    opacity: 1.2;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid rgb(92, 92, 253);
+    color: black;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    margin: 8px 0 20px;
+    padding: 15px;
+}
+[type="submit"] {
+    color: #FFFFFF;
+    padding: 16px 66px 17px 29px;
+    background-color: $pink-dark-color;
+    text-transform: uppercase;
+    border: none;
+}
 @media (max-width: $tablet-width) {
-    .container {
-        width: 92%;
+   .container {
+       width: 100%;
+       margin: 0 auto;
     }
 }
+

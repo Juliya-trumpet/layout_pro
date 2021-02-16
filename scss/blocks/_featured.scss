@@ -21,10 +21,11 @@
     margin: 0 0 48px; 
 }
 .featured__item {
-    width: 23,7%;
-}
-.featured__card-overlay {
-    position: relative;   
+    width: 360px;
+    min-height: 581px;
+    background:#F8F8F8;
+    position: relative; 
+    margin: 0 0 16px 0;
 }
 .featured__card-overlay:hover {
     width: 100%;
@@ -67,9 +68,15 @@
     font-weight: 400;
     line-height: 19px;
     text-align: center;
-    margin: 40%;
+    margin: 33%;
 
     padding: 14.5px 38.5px;
     border: 1px solid #FF6A6A;
     color: $pink-dark-color;
+}
+@media (max-width: $tablet-width){
+    .featured__list {
+        justify-content: space-around;
+
+    }
 }
