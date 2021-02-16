@@ -22,8 +22,19 @@ body {
   margin: 0 auto;
 }
 
+.search {
+  display: none;
+}
+
 .display-block {
   display: block;
+}
+
+.wrp {
+  width: 100%;
+  height: 100px;
+  background: red;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -87,9 +98,19 @@ table {
 
 .header {
   background-color: #222222;
+  /*.header__burger:hover .header-navigation {
+            display: block;
+    }
+    .header-navigation:hover  {
+        display: block;
+    }*/
 }
 
-.header-wrapper {
+.header__icon {
+  fill: #c5c5c5;
+}
+
+.header .header_wrapper {
   min-height: 75px;
   display: flex;
   align-items: center;
@@ -97,34 +118,36 @@ table {
   position: relative;
 }
 
-.header-wrapper__logo {
+.header .header_wrapper__logo {
   display: flex;
   align-items: center;
 }
 
-.header__logo {
+.header .header__logo {
   margin: 0 41px 0 0;
 }
 
-.header-list {
+.header .header_list {
   display: flex;
+  justify-content: flex-end;
+  position: relative;
 }
 
-.header-navigation {
+.header .header_navigation {
   width: 232px;
   height: 764px;
-  display: block;
+  display: none;
   position: absolute;
   left: 909px;
   top: 75px;
   background-color: #fff;
 }
 
-.header-navigation__list {
+.header .header_navigation__list {
   text-align: center;
 }
 
-.header-navigation__heading {
+.header .header_navigation__heading {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -132,7 +155,7 @@ table {
   text-transform: uppercase;
 }
 
-.header-navigation__heading__pink {
+.header .header_navigation__heading__pink {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -141,15 +164,22 @@ table {
   color: #F1E4E6;
 }
 
-.header-list__button {
+.header .header_list__button {
   background-color: transparent;
+  fill: #F16D7F;
   border: none;
   margin: 0 0 0 33px;
 }
 
-.header-list__button:hover .header__icon {
-  fill: red;
+.header .header_list__button:hover .header__icon {
+  fill: #F1E4E6;
   cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .mobile-hide {
+    display: none;
+  }
 }
 
 .advantages {
@@ -215,7 +245,7 @@ table {
 }
 
 .featured__item {
-  width: 360px;
+  width: 23,7%;
 }
 
 .featured__card-overlay {
@@ -276,7 +306,7 @@ table {
 .footer-wrapper {
   display: flex;
   height: 448px;
-  background-image: url(./img/subscribe.jpg);
+  background-image: url(../img/subscribe.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -368,36 +398,12 @@ table {
   padding: 0 0 0 40px;
 }
 
-@media (max-width: 375px) {
-  .intro .intro__heading-wrapper {
-    min-height: 363px;
-  }
-}
-
 .intro .intro__heading {
   font-size: 48px;
   line-height: 58px;
   font-weight: 900;
   font-style: normal;
   text-transform: uppercase;
-}
-
-@media (max-width: 1600px) {
-  .intro .intro__heading {
-    font-size: 44px;
-    line-height: 53px;
-    font-weight: 900;
-    font-style: normal;
-  }
-}
-
-@media (max-width: 375px) {
-  .intro .intro__heading {
-    font-size: 38px;
-    line-height: 46px;
-    font-weight: 900;
-    font-style: normal;
-  }
 }
 
 .intro .intro__text {
@@ -408,15 +414,6 @@ table {
   display: block;
 }
 
-@media (max-width: 1600px) {
-  .intro .intro__text {
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 400;
-    font-style: normal;
-  }
-}
-
 .intro .intro__pink {
   color: #F16D7F;
 }
@@ -424,12 +421,6 @@ table {
 .intro .intro__img {
   width: 50%;
   height: auto;
-}
-
-@media (max-width: 375px) {
-  .intro .intro__img {
-    display: none;
-  }
 }
 
 .reg-bar {
@@ -507,47 +498,29 @@ table {
   margin-bottom: 0 0 98px;
 }
 
-@media (max-width: 1600px) {
-  .stock__list {
-    padding: 19px 0 155px;
-  }
-}
-
 .stock__list .stock__item {
   width: 32%;
   min-height: 360px;
   text-align: center;
 }
 
-@media (max-width: 1600px) {
-  .stock__list .stock__item {
-    min-height: 168px;
-  }
-}
-
-@media (max-width: 375px) {
-  .stock__list .stock__item {
-    width: 100%;
-  }
-}
-
 .stock__list .stock__item--woman {
-  background-image: url(img/stock-img-1.jpg);
+  background-image: url(../img/stock-img-1.jpg);
   background-repeat: no-repeat;
 }
 
 .stock__list .stock__item--man {
-  background-image: url(img/stock-img-2.jpg);
+  background-image: url(../img/stock-img-2.jpg);
   background-repeat: no-repeat;
 }
 
 .stock__list .stock__item--kid {
-  background-image: url(img/stock-img-3.jpg);
+  background-image: url(../img/stock-img-3.jpg);
   background-repeat: no-repeat;
 }
 
 .stock__list .stock__item--shoes {
-  background-image: url(img/stock-img-4.jpg);
+  background-image: url(../img/stock-img-4.jpg);
   background-repeat: no-repeat;
   margin-top: 30px;
   width: 100%;
