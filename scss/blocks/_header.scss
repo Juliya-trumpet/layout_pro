@@ -4,45 +4,45 @@
         &__icon {
             fill: $gray-color;
         }
-    .header_wrapper {
+    .header__wrapper {
         min-height: 75px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative;
     }
-    .header_wrapper__logo {
+    .header__wrapper--logo {
         display: flex;
         align-items: center;
     }
-    .header__logo {
+    .logo {
         margin: 0 41px 0 0;
     }
-    .header_list {
+    .header__list {
         display: flex;
         justify-content: flex-end;
         position: relative;
     }
-    .header_navigation {
+    .header__navigation {
+        position: absolute;
         width: 232px;
         height: 764px;
         display: none;
-        position: absolute;
         left: 909px;
         top: 75px;
         background-color: #fff;
     }
-    .header_navigation__list {
+    .list {
         text-align: center;
     }
-    .header_navigation__heading {
+    .header__navigation--heading {
         font-size: 14px;
         font-style: normal;
         font-weight: 700;
         line-height: 17px;
         text-transform: uppercase;
     }
-    .header_navigation__heading__pink {
+    .list__heading {
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -50,7 +50,7 @@
         text-transform: uppercase;
         color: $pink-color;
     }
-    .header_list__button {
+    .header__list--button {
         background-color: transparent;
         fill: $pink-dark-color;
         border: none;
