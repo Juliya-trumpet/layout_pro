@@ -1,6 +1,6 @@
 .advantages {
     min-height: 341px;
-    background: #000;
+    background: $black-color;
     margin-top: 95.5px;
 }
 .advantages__list {
@@ -21,7 +21,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    color: #FBFBFB;
+    color: $white-color;
     text-align: center;
     padding-top: 28px;    
 }
@@ -31,7 +31,7 @@
     font-weight: 300;
     line-height: 17px;
     padding: 16px 30px 0;
-    color: #FBFBFB;
+    color: $white-color;
     text-align: center;
 }
 
