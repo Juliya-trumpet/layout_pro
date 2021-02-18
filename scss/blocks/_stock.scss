@@ -12,6 +12,7 @@
         width: 32%;
         min-height: 360px;  
         text-align: center;
+        background-size: cover;
 
         // @include tablet {
         //     min-height: 168px;
@@ -44,7 +45,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 19px;
-        color: ffffff;
+        color: $white-color;
         text-transform: uppercase;
         padding: 105px 0 0 0;
     }
@@ -58,22 +59,9 @@
         padding: 0 0 105px 0;
     }
     .stock__heading--two {
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 19px;
-        color: ffffff;
-        text-transform: uppercase;
         padding: 65px 0 0 0;
-
     }
     .stock__text--two {
-         font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 29px;
-        color: $pink-dark-color;
-        text-transform: uppercase;
         padding: 0 0 65px 0;
     }
 }

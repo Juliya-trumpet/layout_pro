@@ -16,32 +16,32 @@
         <main class="main">
             <header class="header">
                 <div class="container header__wrapper">
-                    <div class="header__wrapper--logo">
-                        <a href="index.html"><img class="logo" src="./img/logo.svg" alt="logo" width="44"
+                    <div class="header__wrapper_logo">
+                        <a href="index.html"><img class="logo-img" src="./img/logo.svg" alt="logo" width="44"
                                 height="38"></a>
                         <label class="search-label visualy-hidden" for="search"></label>
                         <input type="search" class="search" placeholder="Поиск" id="search">
                         <img src="./img/loupe.svg" alt="лупа" width="27" height="28">
                     </div>
+
                     <ul class="header__list">
-                        <li><button id="burger" type="button" class="header__list--button mobile-hide">
-                                <i style="font-size: xx-large;
+                        <button type="button" id="burger" class="header__list_button mobile-hide">
+                            <i style="font-size: xx-large;
                             color: lightgray;" class="fa fa-bars"></i>
-                            </button>
-                        </li>
-                        <li><button type="button" class="header_list--button mobile-hide"> <a href="registration.html">
+                        </button>
+                        <li><button type="button" class="header__list_button mobile-hide"> <a href="registration.html">
                                     <i style="font-size: xx-large; color: lightgray;" class="fa fa-user"></i>
                                 </a>
                             </button>
                         </li>
-                        <li><button type="button" class="header_list--button mobile-hide">
+                        <li><button type="button" class="header__list_button mobile-hide">
                                 <i style="font-size: xx-large;
                         color: lightgray;" class="fa fa-cart-plus"></i>
                             </button>
                         </li>
                     </ul>
-                    <nav class="header__navigation" id="menu">
-                        <h2 class="header__navigation--heading">menu</h2>
+                    <nav id="menu" class="header__navigation">
+                        <h2 class="header__navigation_heading">menu</h2>
                         <ul class="list">
                             <li>
                                 <h3 class="list__heading">man</h3>
@@ -91,8 +91,8 @@
                         <p class="stock__text">for kids</p>
                     </li>
                     <li class="stock__item stock__item--shoes">
-                        <h3 class="stock__heading--two">hot deaL</h3>
-                        <p class="stock__text--two">for shoes</p>
+                        <h3 class="stock__heading stock__heading--two">hot deaL</h3>
+                        <p class="stock__text stock__text--two">for shoes</p>
                     </li>
                 </ul>
             </section>
@@ -116,7 +116,7 @@
                         </div>
                     </li>
                     <li class="featured__item">
-                        <img src="./img/sec.jpg" alt="Шпильки" width="360" height="420" class="fetured__img">
+                        <img src="./img/sec.jpg" alt="Шпильки" width="360" height="420">
                         <h3 class="featured__header">ellery x m'o capsule</h3>
                         <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter
@@ -129,7 +129,7 @@
                         </div>
                     </li>
                     <li class="featured__item">
-                        <img src="./img/third.jpg" alt="Панамка" width="360" height="420" class="fetured__img">
+                        <img src="./img/third.jpg" alt="Панамка" width="360" height="420">
                         <h3 class="featured__header">ellery x m'o capsule</h3>
                         <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter
@@ -168,7 +168,7 @@
                         </div>
                     </li>
                     <li class="featured__item">
-                        <img src="./img/sixth.jpg" alt="Бежевый пиджак" width="360" height="420" class="fetured__img">
+                        <img src="./img/sixth.jpg" alt="Бежевый пиджак" width="360" height="420">
                         <h3 class="featured__header">ellery x m'o capsule</h3>
                         <p class="featured__text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter
@@ -185,20 +185,20 @@
             </section>
             <section class="advantages">
                 <ul class="advantages__list container">
-                    <li class="advantages__item">
-                        <img class="advatages__img" src="./img/delivery.svg" alt="Доставка">
+                    <li class="advantages__item ico">
+                        <img class="ico__img" src="./img/delivery.svg" alt="Доставка">
                         <h3 class="advantages__heading">Free Delivery</h3>
                         <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation
                             innovtion with extensive models.</p>
                     </li>
-                    <li class="advantages__item">
-                        <img class="advatages__img" src="./img/sale.svg" alt="Распродажа">
+                    <li class="advantages__item ico">
+                        <img class="ico__img" src="./img/sale.svg" alt="Распродажа">
                         <h3 class="advantages__heading">Sales & discounts</h3>
                         <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation
                             innovtion with extensive models.</p>
                     </li>
-                    <li class="advantages__item">
-                        <img class="advatages__img" src="./img/quality.svg" alt="Качество услуг">
+                    <li class="advantages__item ico">
+                        <img class="ico__img" src="./img/quality.svg" alt="Качество услуг">
                         <h3 class="advantages__heading">Quality assurance</h3>
                         <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation
                             innovtion with extensive models.</p>
@@ -218,7 +218,7 @@
 
                 <div class="footer__form">
                     <div class="footer__appeal">
-                        <h3 class="footer__subtext">subscribe<span class="footer__subtext--two">for our newletter and
+                        <h3 class="footer__subtext">subscribe<span class="footer__spantext">for our newletter and
                                 promotion</span>
                         </h3>
                     </div>
@@ -259,7 +259,7 @@
                 </div>
             </div>
         </footer>
-        <script src="layout.js"></script>
+        <script type="text/javascript" src="layout.js"></script>
     </div>
 </body>
 

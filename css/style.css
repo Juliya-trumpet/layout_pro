@@ -129,12 +129,6 @@ table {
 
 .header {
   background-color: #222222;
-  /*.header__burger:hover .header-navigation {
-            display: block;
-    }
-    .header-navigation:hover  {
-        display: block;
-    }*/
 }
 
 .header__icon {
@@ -149,12 +143,12 @@ table {
   position: relative;
 }
 
-.header .header__wrapper--logo {
+.header .header__wrapper_logo {
   display: flex;
   align-items: center;
 }
 
-.header .logo {
+.header .logo-img {
   margin: 0 41px 0 0;
 }
 
@@ -168,17 +162,18 @@ table {
   position: absolute;
   width: 232px;
   height: 764px;
-  display: none;
   left: 909px;
   top: 75px;
-  background-color: #fff;
+  background-color: #FBFBFB;
+  outline: #333;
+  display: none;
 }
 
 .header .list {
   text-align: center;
 }
 
-.header .header__navigation--heading {
+.header .header__navigation_heading {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -195,14 +190,14 @@ table {
   color: #F1E4E6;
 }
 
-.header .header__list--button {
+.header .header__list_button {
   background-color: transparent;
   fill: #F16D7F;
   border: none;
   margin: 0 0 0 33px;
 }
 
-.header .header__list--button:hover .header__icon {
+.header .header__list_button:hover .header__icon {
   fill: #F1E4E6;
   cursor: pointer;
 }
@@ -215,7 +210,7 @@ table {
 
 .advantages {
   min-height: 341px;
-  background: #000;
+  background: #222222;
   margin-top: 95.5px;
 }
 
@@ -230,7 +225,7 @@ table {
   width: 47%;
 }
 
-.advatages__img {
+.ico__img {
   align-items: center;
   padding: 103px 0 0 165px;
 }
@@ -448,7 +443,7 @@ table {
   text-transform: uppercase;
 }
 
-.footer__subtext--two {
+.footer__spantext {
   display: block;
   font-size: 18px;
   font-style: normal;
@@ -633,6 +628,7 @@ table {
   width: 32%;
   min-height: 360px;
   text-align: center;
+  background-size: cover;
 }
 
 .stock__list .stock__item--woman {
@@ -662,7 +658,7 @@ table {
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
-  color: ffffff;
+  color: #FBFBFB;
   text-transform: uppercase;
   padding: 105px 0 0 0;
 }
@@ -678,22 +674,10 @@ table {
 }
 
 .stock__list .stock__item .stock__heading--two {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 19px;
-  color: ffffff;
-  text-transform: uppercase;
   padding: 65px 0 0 0;
 }
 
 .stock__list .stock__item .stock__text--two {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 29px;
-  color: #F16D7F;
-  text-transform: uppercase;
   padding: 0 0 65px 0;
 }
 /*# sourceMappingURL=style.css.map */
