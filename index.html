@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
@@ -23,9 +23,8 @@
                         <input type="search" class="search" placeholder="Поиск" id="search">
                         <img src="./img/loupe.svg" alt="лупа" width="27" height="28">
                     </div>
-
                     <ul class="header__list">
-                        <button type="button" id="burger" class="header__list_button mobile-hide">
+                        <button type="button" class="header__list_button" id="menu_burger">
                             <i style="font-size: xx-large;
                             color: lightgray;" class="fa fa-bars"></i>
                         </button>
@@ -41,25 +40,42 @@
                         </li>
                     </ul>
                     <nav id="menu" class="header__navigation">
-                        <h2 class="header__navigation_heading">menu</h2>
+                        <h2 class="header__navigation_heading">Menu</h2>
+                        <a href="#" class="header__navigation_close">
+                            <i class="fa fa-times"></i></a>
                         <ul class="list">
                             <li>
+                                <a href="#" class="list__link"></a>
                                 <h3 class="list__heading">man</h3>
                                 <ul>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Bags</a></li>
-                                    <li><a href="#">Denim</a></li>
-                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a class="list__heading_item" href="#">Accessories</a></li>
+                                    <li><a class="list__heading_item" href="#">Bags</a></li>
+                                    <li><a class="list__heading_item" href="#">Denim</a></li>
+                                    <li><a class="list__heading_item" href="#">T-Shirts</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h3 class="list__heading">woman</h3>
+                                <a href="#" class="list-link">
+                                    <h3 class="list__heading">woman</h3>
+                                </a>
                                 <ul>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Jackets & Coats</a></li>
-                                    <li><a href="#">Polos</a></li>
-                                    <li><a href="#">T-Shirts</a></li>
-                                    <li><a href="#">Shirts</a></li>
+                                    <li><a class="list__heading_item" href="#">Accessories</a></li>
+                                    <li><a class="list__heading_item" href="#">Jackets & Coats</a></li>
+                                    <li><a class="list__heading_item" href="#">Polos</a></li>
+                                    <li><a class="list__heading_item" href="#">T-Shirts</a></li>
+                                    <li><a class="list__heading_item" href="#">Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="list-link">
+                                    <h3 class="list__heading">kids</h3>
+                                </a>
+                                <ul>
+                                    <li><a class="list__heading_item" href="#">Accessories</a></li>
+                                    <li><a class="list__heading_item" href="#">Jackets & Coats</a></li>
+                                    <li><a class="list__heading_item" href="#">Polos</a></li>
+                                    <li><a class="list__heading_item" href="#">T-Shirts</a></li>
+                                    <li><a class="list__heading_item" href="#">Shirts</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -70,7 +86,8 @@
 
             <section class="intro">
                 <img class="intro__img" src="./img/man-in-jacket.jpg" alt="мужчина в пальто" width="800" height="765">
-                <div class="intro__heading-wrapper">
+                <div class="intro__heading_wrapper">
+                    <div class="intro__pink-decoration"></div>
                     <h1 class="intro__heading">the brand<span class="intro__text">of luxerious <span
                                 class="intro__pink">fashion</span></span></h1>
                 </div>
@@ -98,7 +115,7 @@
             </section>
             <section class="featured container">
                 <h2 class="featured__heading">Fetured Items</h2>
-                <p class="featured__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+                <p class="featured__paragraf">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
                     reprehenderit.
                 </p>
                 <ul class="featured__list">
@@ -205,61 +222,64 @@
                     </li>
                 </ul>
             </section>
-
+            <div class="section__overlay"></div>
         </main>
         <footer class="footer">
-            <div class="footer-wrapper">
-                <div class="footer__speaker">
-                    <img src="./img/intersect.png" class="footer__img" alt="photo" width="96" height="96">
-                    <p class="footer__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
-                        condimentum“
-                    </p>
-                </div>
+            <section class="footer-wrapper">
+                <h2 class="visually-hidden">Subscribe</h2>
 
-                <div class="footer__form">
-                    <div class="footer__appeal">
-                        <h3 class="footer__subtext">subscribe<span class="footer__spantext">for our newletter and
-                                promotion</span>
-                        </h3>
-                    </div>
-                    <form action="" method="GET">
-                        <div class="footer__input">
-                            <label class="visualy-hidden" for="email"></label>
-                            <input type="text" placeholder="Ваша лучшая почта"></input>
-                        </div>
+                <ul class="subscribe">
+                    <li class="subscribe__list"><img src="./img/intersect.png" class="subscribe__list_img" alt="photo"
+                            width="96" height="96">
+                        <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                            purus
+                            condimentum“
+                        </p>
+                    </li>
+
+                    <li class="subscribe__list">
+                        <h3 class="subscribe__form_subtext">subscribe</h3>
+                        <h4 class="subscribe__form_spantext">for our
+                            newletter and
+                            promotion</h4>
+                        <form action="#" method="GET">
+                            <label class="visually-hidden" for="email">Ваша лучшая почта</label>
+                            <input class="subscribe__form_input" type="text" placeholder="Ваша лучшая почта"></input>
+                            <button type="submit" class="subscribe__form_button">subscribe</button>
+                        </form>
+
+                    </li>
                     </form>
-                </div>
-            </div>
-            </form>
-            <div class="footer__bottom">
-                <div class=" footer__copyright container">
-                    <p class="footer__copytext">#copy 2021</p>
-                    <ul class="footer__social">
-                        <li class="footer__social_btn"><button>
-                                <a href="#" target="_blank" data-toggle="tooltip" title="Наш фейсбук"></a>
-                                <i class="fa fa-border fa-facebook-square"></i>
-                            </button>
-                        </li>
-                        <li class="footer__social_btn"><button>
-                                <a href="#" target="_blank" data-toggle="tooltip" title="Наш инстаграм"></a>
-                                <i class="fa fa-border fa-instagram"></i>
-                            </button>
-                        </li>
-                        <li class="footer__social_btn"><button>
-                                <a href="#" target="_blank" data-toggle="tooltip" title="Наш твитер"></a>
-                                <i class="fa fa-border fa-twitter-square"></i>
-                            </button>
-                        </li>
-                        <li class="footer__social_btn"><button>
-                                <a href="#" target="_blank" data-toggle="tooltip" title="Наш пинтерест"></a>
-                                <i class="fa fa-border fa-pinterest-square"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                </ul>
+                <div class="footer__bottom">
+                    <div class=" footer__copyright container">
+                        <p class="footer__copytext">#copy 2021</p>
+                        <ul class="footer__social">
+                            <li class="footer__social_btn"><button>
+                                    <a href="#" target="_blank" data-toggle="tooltip" title="Наш фейсбук"></a>
+                                    <i class="fa fa-border fa-facebook-square"></i>
+                                </button>
+                            </li>
+                            <li class="footer__social_btn"><button>
+                                    <a href="#" target="_blank" data-toggle="tooltip" title="Наш инстаграм"></a>
+                                    <i class="fa fa-border fa-instagram"></i>
+                                </button>
+                            </li>
+                            <li class="footer__social_btn"><button>
+                                    <a href="#" target="_blank" data-toggle="tooltip" title="Наш твитер"></a>
+                                    <i class="fa fa-border fa-twitter-square"></i>
+                                </button>
+                            </li>
+                            <li class="footer__social_btn"><button>
+                                    <a href="#" target="_blank" data-toggle="tooltip" title="Наш пинтерест"></a>
+                                    <i class="fa fa-border fa-pinterest-square"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
         </footer>
-        <script type="text/javascript" src="layout.js"></script>
+        <script src="/layout.js"></script>
     </div>
 </body>
 

@@ -1,36 +1,27 @@
 .intro {
     display: flex;
 
-    .intro__heading-wrapper {
+    .intro__heading_wrapper {
         width: 100%;
         background-color: $pink-color;
         display: flex;
         align-items: center;
         padding: 0 0 0 40px;
-
-        // @include mobile {
-        //     min-height: 363px;
-        // }
+    }
+    .intro__pink-decoration {
+        background: $pink-dark-color;
+        min-width: 12px;
+        height: 96px;
+        margin: 0 16px 0 0;
     }
     .intro__heading {
         @include font(48px, 58px, 900);
         text-transform: uppercase;
 
-        // @include tablet {
-        //     @include font(44px, 53px, 900);
-        // }
-
-        // @include mobile {
-        //     @include font(38px, 46px, 900);
-        // }
     }
     .intro__text {
         @include font(32px, 38px, 700);
         display: block;
-
-        // @include tablet {
-        //     @include font(24px, 29px)
-        // }
     }
     .intro__pink {
         color: $pink-dark-color;
@@ -39,9 +30,34 @@
     .intro__img {
         width: 50%;
         height: auto;
-
-        // @include mobile {
-        //     display: none;
-        // }
     }
 }
+@media (max-width: $laptop-width) {
+    .intro__heading_wrapper {
+      padding: 0;
+    }
+    .intro__heading {
+        @include font(44px, 52px, 900);
+      }
+}
+@media (max-width: $tablet-width) {
+    .intro__img {
+      width: 50%;
+    }
+  }
+@media (max-width: $mobileL-width) {
+    .intro__heading_wrapper {
+      width: 100%;
+      min-height: 363px;
+      justify-content: center;
+    }
+    .intro__img {
+        display: none;
+      }
+      .intro__pink-decoration {
+        height: 61px;
+      }
+  }
+ 
+  
+  

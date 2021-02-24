@@ -1,35 +1,43 @@
 .reg-bar {
-    display: block;
+    background: $pink-color;
     min-height: 148px;
-    color: $pink-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 .reg-bar__text {
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 29px;
-    color: $pink-dark-color;
+    font-weight: 400;
+    font-style: normal;
     text-transform: uppercase;
-    padding: 59px 0 60px 230px;
+    color: $pink-dark-color;
+    margin-left: 14%;
 }
+
 .reg {
     display: flex;
     justify-content: space-between;
     min-height: 675px;
     background-color: #fff;
 }
+
 .reg__form {
     padding-right: 125px;
 }
+
 .reg__title {
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 39px;
 }
+
 .reg-form__advantages {
     position: relative;
 }
+
 .reg-form__heading {
     font-size: 24px;
     font-style: normal;
@@ -39,6 +47,7 @@
     text-transform: uppercase;
     color: $black-color;
 }
+
 .reg-form__text {
     font-size: 24px;
     font-style: normal;
@@ -47,6 +56,7 @@
     padding-bottom: 21px;
     color: $black-color;
 }
+
 .reg-form__text-second {
     font-size: 13px;
     font-style: normal;
@@ -54,12 +64,14 @@
     line-height: 16px;
     color: #B1B1B1;
 }
+
 .reg__radio {
     display: flex;
     padding: 31px 0 33px 0;
 }
+
 .list__item {
-    position: relative; 
+    position: relative;
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -67,6 +79,7 @@
     padding-bottom: 16px;
     color: $black-color;
 }
+
 .list__item::before {
     top: 5px;
     left: -42px;
@@ -80,10 +93,11 @@
         line-height: 19.2px;
         padding-bottom: 32px;
     }
+
     .reg-form__text {
-        font-size: 16px;       
+        font-size: 16px;
         line-height: 19.2px;
         padding-bottom: 21px;
     }
-    
+
 }
